@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<!-- Encodage et affichage mobile -->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Titre et description de la page -->
+	<title>À propos – Lucas Charron</title>
+	<meta name="description" content="Lucas Charron, analyste développeur : mon parcours, mes compétences et mes outils." />
+
+	<!-- Open Graph (aperçu lors du partage du lien) -->
+	<meta property="og:title" content="À propos – Lucas Charron" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="img/logos/logo-lc-1200x630.png" />
+
+	<!-- Favicons et manifest -->
+	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+	<link rel="manifest" href="/site.webmanifest" />
+
+	<!-- Feuilles de style -->
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+	<!-- ===== EN-TÊTE ===== -->
+	<header>
+		<a href="index.html">
+			<img src="img/logos/logo-lc.svg" alt="Lucas Charron, retour à l'accueil" width="57" height="35">
+		</a>
+		<!-- Navigation principale -->
+		<nav aria-label="Navigation principale">
+			<button type="button" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+			<ul id="menu-principal" class="menu-principal" hidden>
+				<li><a href="index.html">accueil</a></li>
+				<li><a href="a-propos.html" aria-current="page">à propos</a></li>
+				<li><a href="projets.html">projets</a></li>
+				<li><a href="contact.html">contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- ===== CONTENU PRINCIPAL ===== -->
+	<main>
+		<!-- Section : hero (présentation) -->
+		<section id="hero" aria-labelledby="titre-apropos">
+			<img src="img/photos/photo-profil.jpg" alt="Photo de profil de Lucas Charron" width="881" height="1322">
+			<div>
+				<h1 id="titre-apropos">À propos de moi</h1>
+				<p>Lucas Charron, analyste développeur</p>
+				<p>Durant mes 2 ans de formation, j’ai réalisé des projets de site web et web mobile. Je suis à la recherche d’une alternance en développement web afin de mettre mes compétences en application et de progresser au sein d’une équipe.</p>
+				<div>
+					<a href="CV/cv-lucas-charron-portfolio.pdf" class="btn btn--accent" download>Télécharger mon CV</a>
+					<a href="contact.html" class="btn btn--secondary">Me contacter</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Section : Mon parcours -->
+		<section aria-labelledby="titre-parcours">
+			<h2 id="titre-parcours">Mon parcours</h2>
+			<ul>
+				<li>
+					<h3>Formation DWWM — Développeur Web et Web Mobile</h3>
+					<p>2 ans de formation</p>
+					<p>Réalisation de projets de site web et web mobile : HTML, CSS, Tailwind, JavaScript. [ La Fabrique du numérique, 2026/2027 ]</p>
+				</li>
+				<li>
+					<h3>Recherche d’alternance</h3>
+					<p>Aujourd’hui</p>
+					<p>Alternance en développement web pour mettre mes compétences en application et progresser au sein d’une équipe.</p>
+				</li>
+			</ul>
+		</section>
+
+		<!-- Section : Compétences -->
+		<section aria-labelledby="titre-competences">
+			<h2 id="titre-competences">Compétences</h2>
+			<ul>
+				<li>
+					<img src="img/logos/html5.svg" alt="" width="64" height="64">
+					<p>HTML</p>
+				</li>
+				<li>
+					<img src="img/logos/css3.svg" alt="" width="64" height="64">
+					<p>CSS</p>
+				</li>
+				<li>
+					<img src="img/logos/tailwindcss.svg" alt="" width="64" height="64">
+					<p>Tailwind CSS</p>
+				</li>
+				<li>
+					<img src="img/logos/javascript.svg" alt="" width="64" height="64">
+					<p>JavaScript</p>
+				</li>
+			</ul>
+		</section>
+
+		<!-- Section : Outils -->
+		<section aria-labelledby="titre-outils">
+			<h2 id="titre-outils">Outils</h2>
+			<ul>
+				<li>
+					<img src="img/logos/vscode.svg" alt="" width="64" height="64">
+					<p>Visual Studio Code</p>
+				</li>
+				<li>
+					<img src="img/logos/jetbrains.svg" alt="" width="64" height="64">
+					<p>JetBrains</p>
+				</li>
+				<li>
+					<img src="img/logos/webstorm.svg" alt="" width="64" height="64">
+					<p>WebStorm</p>
+				</li>
+				<li>
+					<img src="img/logos/phpstorm.svg" alt="" width="64" height="64">
+					<p>PhpStorm</p>
+				</li>
+				<li>
+					<img src="img/logos/github.svg" alt="" width="64" height="64">
+					<p>GitHub</p>
+				</li>
+				<li>
+					<img src="img/logos/figma.svg" alt="" width="64" height="64">
+					<p>Figma</p>
+				</li>
+			</ul>
+		</section>
+
+		<!-- Section : Mon CV -->
+		<section aria-labelledby="titre-cv">
+			<h2 id="titre-cv">Mon CV</h2>
+			<p>Téléchargez mon CV au format PDF.</p>
+			<a href="CV/cv-lucas-charron-portfolio.pdf" class="btn btn--accent" download>Télécharger mon CV (PDF)</a>
+		</section>
+	</main>
+
+	<!-- ===== PIED DE PAGE ===== -->
+	<footer>
+		<p>© 2026 Lucas Charron — Portfolio</p>
+		<a href="mentions-legales.html">Mentions légales</a>
+	</footer>
+	<!-- Script du menu burger -->
+	<script src="js/nav.js"></script>
+</body>
+
+</html>

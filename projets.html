@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<!-- Encodage et affichage mobile -->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Titre et description de la page -->
+	<title>Mes projets – Lucas Charron</title>
+	<meta name="description" content="Découvrez les projets de site web et web mobile réalisés par Lucas Charron durant sa formation." />
+
+	<!-- Open Graph (aperçu lors du partage du lien) -->
+	<meta property="og:title" content="Mes projets – Lucas Charron" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="img/logos/logo-lc-1200x630.png" />
+
+	<!-- Favicons et manifest -->
+	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+	<link rel="manifest" href="/site.webmanifest" />
+
+	<!-- Feuilles de style -->
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+	<!-- ===== EN-TÊTE ===== -->
+	<header>
+		<a href="index.html">
+			<img src="img/logos/logo-lc.svg" alt="Lucas Charron, retour à l'accueil" width="57" height="35">
+		</a>
+		<!-- Navigation principale -->
+		<nav aria-label="Navigation principale">
+			<button type="button" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+			<ul id="menu-principal" class="menu-principal" hidden>
+				<li><a href="index.html">accueil</a></li>
+				<li><a href="a-propos.html">à propos</a></li>
+				<li><a href="projets.html" aria-current="page">projets</a></li>
+				<li><a href="contact.html">contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- ===== CONTENU PRINCIPAL ===== -->
+	<main>
+		<!-- Section : Mes projets -->
+		<section aria-labelledby="titre-projets">
+			<h1 id="titre-projets">Mes projets</h1>
+			<p>Durant mes 2 ans de formation, j’ai réalisé des projets de site web et web mobile. En voici quelques exemples que vous pouvez visiter pour voir comment je travaille.</p>
+			<ul>
+				<li>
+					<!-- Projet : Robbie Lens -->
+					<article>
+						<img src="img/projets/robbie-lens.png" width="1017" height="467" alt="Capture de la page d'accueil du site Robbie Lens">
+						<h3>Robbie Lens</h3>
+						<p>Voici un site de présentation d’une photographe.</p>
+						<a href="page-robbies-lens.html" aria-label="Voir le projet Robbie Lens">Voir le projet →</a>
+					</article>
+				</li>
+				<li>
+					<!-- Projet : Flex CAR -->
+					<article>
+						<img src="img/projets/flex-car.png" alt="Capture de la page du site Flex CAR">
+						<h3>Flex CAR</h3>
+						<p>C’est un site qui nous a permis de maîtriser le flex CSS.</p>
+						<a href="page-flex-car.html" aria-label="Voir le projet Flex CAR">Voir le projet →</a>
+					</article>
+				</li>
+				<li>
+					<!-- Projet : IA au travail -->
+					<article>
+						<img src="img/projets/ia-au-travail.png" alt="Capture de la page du site IA au travail">
+						<h3>IA au travail</h3>
+						<p>C’est un site qui a permis de maîtriser le grid CSS.</p>
+						<a href="page-ia-au-travail.html" aria-label="Voir le projet IA au travail">Voir le projet →</a>
+					</article>
+				</li>
+				<li>
+					<!-- Projet : Ethereum NFT -->
+					<article>
+						<img src="img/projets/etherium-nft.png" width="432" height="612" alt="Capture de la page du site Ethereum NFT">
+						<h3>Ethereum NFT</h3>
+						<p>C’est un site vitrine d’un NFT pour un projet de classe.</p>
+						<a href="page-card-nft.html" aria-label="Voir le projet Ethereum NFT">Voir le projet →</a>
+					</article>
+				</li>
+				<li>
+					<!-- Projet : Huddle -->
+					<article>
+						<img src="img/projets/huddle.png" width="607" height="302" alt="Capture de la page du site Huddle">
+						<h3>Huddle</h3>
+						<p>Huddle est un site de discussion communautaire.</p>
+						<a href="page-huddle.html" aria-label="Voir le projet Huddle">Voir le projet →</a>
+					</article>
+				</li>
+				<li>
+					<!-- Projet : Générateur de mdp -->
+					<article>
+						<img src="img/projets/generateur-mdp.png" alt="Capture de la page du site Générateur de mdp">
+						<h3>Générateur de mdp</h3>
+						<p>C’est un site fait 100 % IA pour nous apprendre à utiliser l’IA.</p>
+						<a href="page-generateur-mdp.html" aria-label="Voir le projet Générateur de mdp">Voir le projet →</a>
+					</article>
+				</li>
+			</ul>
+		</section>
+	</main>
+
+	<!-- ===== PIED DE PAGE ===== -->
+	<footer>
+		<p>© 2026 Lucas Charron — Portfolio</p>
+		<a href="mentions-legales.html">Mentions légales</a>
+	</footer>
+	<!-- Script du menu burger -->
+	<script src="js/nav.js"></script>
+</body>
+
+</html>

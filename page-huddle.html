@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<!-- Encodage et affichage mobile -->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Titre et description de la page -->
+	<title>Huddle – Lucas Charron</title>
+	<meta name="description" content="Huddle est un site de discussion communautaire." />
+
+	<!-- Open Graph (aperçu lors du partage du lien) -->
+	<meta property="og:title" content="Huddle – Lucas Charron" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="img/logos/logo-lc-1200x630.png" />
+
+	<!-- Favicons et manifest -->
+	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+	<link rel="manifest" href="/site.webmanifest" />
+
+	<!-- Feuilles de style -->
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+	<!-- ===== EN-TÊTE ===== -->
+	<header>
+		<a href="index.html">
+			<img src="img/logos/logo-lc.svg" alt="Lucas Charron, retour à l'accueil" width="57" height="35">
+		</a>
+		<!-- Navigation principale -->
+		<nav aria-label="Navigation principale">
+			<button type="button" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+			<ul id="menu-principal" class="menu-principal" hidden>
+				<li><a href="index.html">accueil</a></li>
+				<li><a href="a-propos.html">à propos</a></li>
+				<li><a href="projets.html">projets</a></li>
+				<li><a href="contact.html">contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- ===== CONTENU PRINCIPAL ===== -->
+	<main>
+		<!-- Fil d'Ariane -->
+		<nav aria-label="Fil d'Ariane">
+			<ul>
+				<li><a href="projets.html">Projets</a></li>
+				<li aria-current="page">Huddle</li>
+			</ul>
+		</nav>
+
+		<!-- Section : présentation du projet -->
+		<section aria-labelledby="titre-projet">
+			<h1 id="titre-projet">Huddle</h1>
+			<p>Huddle est un site de discussion communautaire.</p>
+			<ul>
+				<li>Projet de formation</li>
+				<li>Site web</li>
+			</ul>
+			<img src="img/projets/huddle.png" width="607" height="302" alt="Capture de la page du site Huddle">
+		</section>
+
+		<div>
+			<!-- Section : détails du projet (contexte, rôle, apprentissage) -->
+			<section>
+				<h2>Contexte</h2>
+				<p>C’est le tout premier site fonctionnel que j’ai créé grâce à un dossier Figma : je devais reproduire le Figma en HTML et CSS.</p>
+				<h2>Mon rôle</h2>
+				<p>C’était un projet solo, donc j’ai dû tout mettre en place pour faire la mise en page et respecter le Figma.</p>
+				<h2>Ce que j’ai appris</h2>
+				<p>J’ai appris à quel point la sémantique dans un site est importante, que l’inspecteur du navigateur est très utile, ainsi que quelques nouvelles propriétés CSS et les variables CSS.</p>
+			</section>
+
+			<!-- Complément : informations sur le projet -->
+			<aside aria-labelledby="titre-infos">
+				<h2 id="titre-infos">Informations</h2>
+				<dl>
+					<dt>Type</dt>
+					<dd>Site de discussion communautaire</dd>
+					<dt>Cadre</dt>
+					<dd>Projet de formation</dd>
+					<dt>Durée</dt>
+					<dd>3 semaines</dd>
+					<dt>Outils</dt>
+					<dd>Figma, PhpStorm et l’inspecteur du navigateur</dd>
+				</dl>
+				<a href="#" class="btn btn--primary">Voir le site</a>
+			</aside>
+		</div>
+
+		<!-- Section : Autres projets -->
+		<section aria-labelledby="titre-autres">
+			<h2 id="titre-autres">Autres projets</h2>
+			<ul>
+				<li>
+					<!-- Projet : Robbie Lens -->
+					<article>
+						<img src="img/projets/robbie-lens.png" width="1017" height="467" alt="Capture de la page d'accueil du site Robbie Lens">
+						<h3>Robbie Lens</h3>
+						<p>Voici un site de présentation d’une photographe.</p>
+						<a href="page-robbies-lens.html" aria-label="Voir le projet Robbie Lens">Voir le projet →</a>
+					</article>
+				</li>
+				<li>
+					<!-- Projet : Ethereum NFT -->
+					<article>
+						<img src="img/projets/etherium-nft.png" width="432" height="612" alt="Capture de la page du site Ethereum NFT">
+						<h3>Ethereum NFT</h3>
+						<p>C’est un site vitrine d’un NFT pour un projet de classe.</p>
+						<a href="page-card-nft.html" aria-label="Voir le projet Ethereum NFT">Voir le projet →</a>
+					</article>
+				</li>
+				<li>
+					<!-- Projet : Flex CAR -->
+					<article>
+						<img src="img/projets/flex-car.png" alt="Capture de la page du site Flex CAR">
+						<h3>Flex CAR</h3>
+						<p>C’est un site qui nous a permis de maîtriser le flex CSS.</p>
+						<a href="page-flex-car.html" aria-label="Voir le projet Flex CAR">Voir le projet →</a>
+					</article>
+				</li>
+			</ul>
+		</section>
+	</main>
+
+	<!-- ===== PIED DE PAGE ===== -->
+	<footer>
+		<p>© 2026 Lucas Charron — Portfolio</p>
+		<a href="mentions-legales.html">Mentions légales</a>
+	</footer>
+	<!-- Script du menu burger -->
+	<script src="js/nav.js"></script>
+</body>
+
+</html>

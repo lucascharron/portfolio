@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<!-- Encodage et affichage mobile -->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Titre et description de la page -->
+	<title>Contact – Lucas Charron</title>
+	<meta name="description" content="Contactez Lucas Charron, à la recherche d’une alternance en développement web." />
+
+	<!-- Open Graph (aperçu lors du partage du lien) -->
+	<meta property="og:title" content="Contact – Lucas Charron" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="img/logos/logo-lc-1200x630.png" />
+
+	<!-- Favicons et manifest -->
+	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+	<link rel="manifest" href="/site.webmanifest" />
+
+	<!-- Feuilles de style -->
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+	<!-- ===== EN-TÊTE ===== -->
+	<header>
+		<a href="index.html">
+			<img src="img/logos/logo-lc.svg" alt="Lucas Charron, retour à l'accueil" width="57" height="35">
+		</a>
+		<!-- Navigation principale -->
+		<nav aria-label="Navigation principale">
+			<button type="button" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+			<ul id="menu-principal" class="menu-principal" hidden>
+				<li><a href="index.html">accueil</a></li>
+				<li><a href="a-propos.html">à propos</a></li>
+				<li><a href="projets.html">projets</a></li>
+				<li><a href="contact.html" aria-current="page">contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- ===== CONTENU PRINCIPAL ===== -->
+	<main>
+		<!-- Section : Contact -->
+		<section aria-labelledby="titre-contact">
+			<h1 id="titre-contact">Contact</h1>
+			<p>Si vous souhaitez travailler avec moi :</p>
+			<p>Je suis à la recherche d’une alternance en développement web afin de mettre mes compétences en application et de progresser au sein d’une équipe. Discutons ensemble des projets que nous pourrions mener.</p>
+
+			<h2>Contact informations</h2>
+			<address>
+				<p>7 rue flandres-dunkerque 1940, Vendôme</p>
+				<p><a href="mailto:lucascharron2002@gmail.com">lucascharron2002@gmail.com</a></p>
+				<p><a href="tel:+33637034649">06 37 03 46 49</a></p>
+			</address>
+		</section>
+
+		<!-- Section : Formulaire de contact -->
+		<section aria-labelledby="titre-formulaire">
+			<h2 id="titre-formulaire">Formulaire de contact</h2>
+			<!-- Formulaire -->
+			<form action="#" method="post">
+				<p>Les champs marqués d’un * sont obligatoires.</p>
+
+				<div>
+					<label for="nom">Nom *</label>
+					<input type="text" id="nom" name="nom" placeholder="Votre nom" autocomplete="family-name" required>
+				</div>
+				<div>
+					<label for="prenom">Prénom *</label>
+					<input type="text" id="prenom" name="prenom" placeholder="Votre prénom" autocomplete="given-name" required>
+				</div>
+				<div>
+					<label for="email">E-mail *</label>
+					<input type="email" id="email" name="email" placeholder="vous@exemple.fr" autocomplete="email" required>
+				</div>
+				<div>
+					<label for="sujet">Sujet *</label>
+					<select id="sujet" name="sujet" required>
+						<option value="">Choisir un sujet</option>
+						<option value="alternance">Proposition d’alternance</option>
+						<option value="projet">Question sur un projet</option>
+						<option value="autre">Autre</option>
+					</select>
+				</div>
+				<div>
+					<label for="message">Message *</label>
+					<textarea id="message" name="message" rows="6" placeholder="Écrivez votre message" required></textarea>
+				</div>
+				<div>
+					<input type="checkbox" id="consentement" name="consentement" required>
+					<label for="consentement">J’accepte que mes données soient utilisées pour répondre à ma demande.</label>
+				</div>
+
+				<button type="submit" class="btn btn--primary">Envoyer</button>
+			</form>
+		</section>
+	</main>
+
+	<!-- ===== PIED DE PAGE ===== -->
+	<footer>
+		<p>© 2026 Lucas Charron — Portfolio</p>
+		<a href="mentions-legales.html">Mentions légales</a>
+	</footer>
+	<!-- Script du menu burger -->
+	<script src="js/nav.js"></script>
+</body>
+
+</html>

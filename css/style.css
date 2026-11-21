@@ -1,0 +1,239 @@
+/* ==========================================================================
+   Polices (@font-face)
+   ========================================================================== */
+
+/* --- Montserrat --- */
+/* montserrat-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v31-latin-regular.woff2') format('woff2');
+}
+/* montserrat-500 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/montserrat-v31-latin-500.woff2') format('woff2');
+}
+
+/* --- Lexend --- */
+/* lexend-300 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/lexend-v26-latin-300.woff2') format('woff2');
+}
+/* lexend-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/lexend-v26-latin-regular.woff2') format('woff2');
+}
+/* lexend-600 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/lexend-v26-latin-600.woff2') format('woff2');
+}
+
+/* --- Antic Slab --- */
+/* antic-slab-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Antic Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/antic-slab-v17-latin-regular.woff2') format('woff2');
+}
+
+
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+:root {
+    /* Couleurs (charte graphique Figma, collection Palette) */
+    --color-fond: #E8D7F1;          /* Fond de page */
+    --color-mauve: #DDCBD7;         /* Cartes et blocs */
+    --color-accent: #A167A5;        /* Anneau de focus, décors */
+    --color-accent-fonce: #7E4585;  /* Fond des boutons accent (contraste AA) */
+    --color-violet-fonce: #4A306D;  /* Titres secondaires, bandeau contact, hover boutons */
+    --color-bleu-nuit: #0E273C;     /* Texte, header et footer */
+
+    /* Familles de polices */
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Lexend', sans-serif;
+    --font-accent: 'Antic Slab', serif;
+
+    /* Graisses */
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+
+    /* Tailles de texte (charte graphique Figma) */
+    /* Montserrat Medium : titres */
+    --fs-title-xl: 7.2rem;
+    --fs-title-l: 4rem;
+    --fs-title-m: 3.2rem;
+    /* Lexend : texte, sous-titres, titres de cartes et boutons */
+    --fs-text-l: 2.8rem;
+    --fs-text-l-small: 2.1rem;   /* variante 28 / 21 de la charte */
+    --fs-text-m: 1.8rem;
+    --fs-text-m-small: 1.4rem;   /* variante 18 / 14 de la charte */
+    --fs-button: 1.4rem;
+    /* Antic Slab : menu de navigation */
+    --fs-nav: 2.4rem;
+}
+
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+    background-color: var(--color-fond);
+    display: flex;
+    flex-direction: column;
+
+}
+/* ==========================================================================
+   header + reponsive
+   ========================================================================== */
+header {
+    background-color: var(--color-bleu-nuit);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.15rem 2rem;
+    position: relative;
+}
+
+header img{
+    height: 3.5rem;
+    width: auto;
+}
+
+header nav button {
+    width: 4.4rem;
+    height: 4.4rem;
+    font-size: 0;
+    background-image: url("../img/icones/burger.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    background-size: 2.8rem 2.1rem;
+    border: none;
+    margin-right: -0.8rem;
+}
+
+header nav a {
+    color: var(--color-fond);
+    text-decoration: none;
+    font-family: var(--font-accent);
+    font-size: var(--fs-nav);
+    padding: 2rem;
+    display: inline-block;
+}
+
+.menu-principal{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--color-bleu-nuit);
+    z-index: 1;
+}
+
+@media (min-width: 768px) {
+
+    header {
+        padding: 2.4rem 8rem;
+    }
+
+    header img {
+        height: 5.5rem;
+        width: auto;
+    }
+
+    header nav button {
+        display: none;
+    }
+
+    .menu-principal {
+        display: flex;
+        position: static;
+        gap: 4.8rem;
+        align-items: center;
+        padding:0;
+    }
+
+    header nav a {
+        padding: 0.8rem 0;
+    }
+
+    .menu-principal li:last-child a{
+        background-color: var(--color-accent-fonce);
+        border-radius: 0.8rem;
+        padding: 0.8rem 2rem;
+    }
+
+}
+
+/* ==========================================================================
+   button
+   ========================================================================== */
+
+.btn{
+    display: inline-block;
+    padding: 1.2rem 2.6rem;
+    border: 0.2rem solid transparent;
+    border-radius: 0.8rem;
+    font-family: var(--font-secondary);
+    font-size: var(--fs-button);
+    font-weight: var(--fw-semibold);
+    text-decoration: none;
+    line-height: 1.8rem;
+}
+
+.btn--primary{
+    background-color: var(--color-bleu-nuit);
+    color: var(--color-fond);
+    border-color: var(--color-bleu-nuit);
+}
+
+.btn--secondary{
+    background-color: transparent;
+    color: var(--color-violet-fonce);
+    border-color: var(--color-violet-fonce);
+}
+
+.btn--accent{
+    background-color: var(--color-accent-fonce);
+    color: var(--color-fond);
+    border-color: var(--color-accent-fonce);
+}
+
+.btn:hover{
+    background-color: var(--color-violet-fonce);
+    border-color: var(--color-violet-fonce);
+    color: var(--color-fond);
+}
+
+.btn:focus-visible{
+    outline: 0.2rem solid var(--color-accent);
+    outline-offset: 0.6rem;
+}

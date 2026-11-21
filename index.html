@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!-- Mettre le code langue du site dans l'attribut lang -->
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Accueil-portfolio</title>
+	<meta name="description" content="Portfolio de Lucas Charron, développeur web : découvrez mes projets de sites web et web mobile réalisés durant ma formation." />
+	<!-- Mettre la description du contenu de la page dans l'attribut content -->
+
+	<!-- Mettre ci-dessous les informations pour Open Graph (concerne notamment Facebook) - Voir https://ogp.me/-->
+	<meta property="og:title" content="Accueil-portfolio" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="" />
+	<meta property="og:image" content="img/logos/logo-lc-1200x630.png" />
+
+	<!-- Le minimum pour gérer les favicon : https://dev.to/masakudamatsu/favicon-nightmare-how-to-maintain-sanity-3al7 
+    Icônes à générer : 
+    favicon.ico : 32x32
+    icon.svg : peu importe la taille, mais privilégier un format carré
+    apple-touch-icon.png : 180x180
+    192.png : 192x192
+    512.png : 512x512
+
+	Vous pouvez aussi utiliser un générateur : https://realfavicongenerator.net/
+    -->
+	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+	<link rel="manifest" href="/site.webmanifest" />
+	<!-- voir le fichier manifest.webmanifest -->
+
+	<!-- A terme : n'appeler qu'une seule feuille de style minifiée -->
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+	<!-- ===== EN-TÊTE ===== -->
+	<header>
+		<a href="index.html">
+			<img src="img/logos/logo-lc.svg" alt="Lucas Charron, retour à l'accueil" width="57" height="35">
+		</a>
+		<!-- Navigation principale -->
+		<nav aria-label="Navigation principale">
+			<button type="button" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+			<ul id="menu-principal" class="menu-principal" hidden>
+				<li><a href="index.html" aria-current="page">accueil</a></li>
+				<li><a href="a-propos.html">à propos</a></li>
+				<li><a href="projets.html">projets</a></li>
+				<li><a href="contact.html">contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- ===== CONTENU PRINCIPAL ===== -->
+	<main>
+		<!-- Section : hero (présentation) -->
+		<section id="hero" aria-labelledby="titre-hero">
+			<img src="img/photos/photo-profil.jpg" alt="Photo de profil de Lucas Charron" width="881" height="1322">
+			<div>
+				<p>Recherche une alternance en développement</p>
+				<h1 id="titre-hero">Lucas Charron</h1>
+				<p>Analyste développeur</p>
+				<p>Durant mes 2 ans de formation, j’ai réalisé des projets de site web et web mobile. Je souhaite mettre mes compétences en application et progresser au sein d’une équipe.</p>
+				<div>
+					<a href="projets.html" class="btn btn--primary">voir mes projets</a>
+					<a href="contact.html" class="btn btn--secondary">Me contacter</a>
+					<a href="CV/cv-lucas-charron-portfolio.pdf" download>Mon CV (PDF)</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Section : À propos de moi -->
+		<section aria-labelledby="titre-apropos">
+			<h2 id="titre-apropos">À propos de moi</h2>
+			<p>Je suis à la recherche d’une alternance en développement web afin de mettre mes compétences en application et de progresser au sein d’une équipe.</p>
+			<a href="a-propos.html" class="btn btn--primary">En savoir plus</a>
+		</section>
+
+		<!-- Section : Mes compétences informatiques -->
+		<section aria-labelledby="titre-competences">
+			<h2 id="titre-competences">Mes compétences informatiques</h2>
+			<ul>
+				<li>
+					<img src="img/logos/html5.svg" alt="" width="64" height="64">
+					<p>HTML</p>
+				</li>
+				<li>
+					<img src="img/logos/css3.svg" alt="" width="64" height="64">
+					<p>CSS</p>
+				</li>
+				<li>
+					<img src="img/logos/tailwindcss.svg" alt="" width="64" height="64">
+					<p>Tailwind CSS</p>
+				</li>
+				<li>
+					<img src="img/logos/javascript.svg" alt="" width="64" height="64">
+					<p>Javascript</p>
+				</li>
+			</ul>
+		</section>
+
+		<!-- Section : Mes projets -->
+		<section aria-labelledby="titre-projets">
+			<h2 id="titre-projets">Mes projets</h2>
+			<p>Voici quelques exemples que vous pouvez visiter pour voir comment je travaille.</p>
+			<ul>
+				<li>
+					<!-- Projet : Robbie Lens -->
+					<article>
+						<img src="img/projets/robbie-lens.png" alt="Capture de la page d'accueil du site Robbie Lens" width="1017" height="467">
+						<h3>Robbie Lens</h3>
+						<p>Voici un site de présentation d’une photographe.</p>
+						<a href="page-robbies-lens.html" aria-label="Voir le projet Robbie Lens">voir le projet</a>
+					</article>
+				</li>
+				<li>
+					<!-- Projet : Huddle -->
+					<article>
+						<img src="img/projets/huddle.png" alt="Capture de la page du site Huddle" width="607" height="302">
+						<h3>Huddle</h3>
+						<p>Huddle est un site de discussion communautaire.</p>
+						<a href="page-huddle.html" aria-label="Voir le projet Huddle">voir le projet</a>
+					</article>
+				</li>
+				<li>
+					<!-- Projet : Ethereum NFT -->
+					<article>
+						<img src="img/projets/etherium-nft.png" alt="Capture de la page du site Ethereum NFT" width="432" height="612">
+						<h3>Ethereum NFT</h3>
+						<p>C’est un site vitrine d’un NFT pour un projet de classe.</p>
+						<a href="page-card-nft.html" aria-label="Voir le projet Ethereum NFT">voir le projet</a>
+					</article>
+				</li>
+			</ul>
+			<a href="projets.html" class="btn btn--primary">Voir tous mes projets</a>
+		</section>
+
+		<!-- Section : Travaillons ensemble -->
+		<section aria-labelledby="titre-contact">
+			<h2 id="titre-contact">Travaillons ensemble</h2>
+			<p>Je suis à la recherche d’une alternance en développement web afin de mettre mes compétences en application et de progresser au sein d’une équipe. Discutons ensemble des projets que nous pourrions mener.</p>
+			<a href="contact.html" class="btn btn--accent">Me contacter</a>
+		</section>
+	</main>
+
+	<!-- ===== PIED DE PAGE ===== -->
+	<footer>
+		<p>© 2026 Lucas Charron — Portfolio</p>
+		<a href="mentions-legales.html">Mentions légales</a>
+	</footer>
+	<!-- Script du menu burger -->
+	<script src="js/nav.js"></script>
+</body>
+
+</html>

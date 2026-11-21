@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<!-- Encodage et affichage mobile -->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Titre et description de la page -->
+	<title>Justification des choix – Lucas Charron</title>
+	<meta name="description" content="Pourquoi ce design, ce contenu et cette ergonomie pour le portfolio de Lucas Charron." />
+
+	<!-- Open Graph (aperçu lors du partage du lien) -->
+	<meta property="og:title" content="Justification des choix – Lucas Charron" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="img/logos/logo-lc-1200x630.png" />
+
+	<!-- Favicons et manifest -->
+	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+	<link rel="manifest" href="/site.webmanifest" />
+
+	<!-- Feuilles de style -->
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+	<!-- ===== EN-TÊTE ===== -->
+	<header>
+		<a href="index.html">
+			<img src="img/logos/logo-lc.svg" alt="Lucas Charron, retour à l'accueil" width="57" height="35">
+		</a>
+		<!-- Navigation principale -->
+		<nav aria-label="Navigation principale">
+			<button type="button" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+			<ul id="menu-principal" class="menu-principal" hidden>
+				<li><a href="index.html">accueil</a></li>
+				<li><a href="a-propos.html">à propos</a></li>
+				<li><a href="projets.html">projets</a></li>
+				<li><a href="contact.html">contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- ===== CONTENU PRINCIPAL ===== -->
+	<main>
+		<h1>Justification des choix</h1>
+		<p>Pourquoi ce design, ce contenu et cette ergonomie</p>
+
+		<!-- Section : Structure -->
+		<section aria-labelledby="jc-structure">
+			<h2 id="jc-structure">Structure</h2>
+			<p>6 pages : accueil, mes projets, projet (détail), à propos, mentions légales et contact. Le menu reste identique en haut de chaque page et le pied de page donne accès aux mentions légales. Le parcours est simple : accueil → mes projets → un projet, avec le bouton « contact » visible partout. La page « Mentions légales » est un exemple : le texte définitif sera généré à la mise en ligne, car l’hébergeur n’est pas encore choisi.</p>
+		</section>
+
+		<!-- Section : Choix graphiques -->
+		<section aria-labelledby="jc-graphiques">
+			<h2 id="jc-graphiques">Choix graphiques</h2>
+			<p>La palette violet / bleu nuit vient de ma palette Coolors et donne une identité reconnaissable : fond lilas clair, cartes mauves, bleu nuit pour le texte. Montserrat pour les titres, Lexend pour le texte (lisible, moderne), Antic Slab pour le menu comme signature. Le logo LC reprend les deux couleurs de la palette.</p>
+		</section>
+
+		<!-- Section : Hiérarchisation -->
+		<section aria-labelledby="jc-hierarchie">
+			<h2 id="jc-hierarchie">Hiérarchisation</h2>
+			<p>Une échelle de tailles claire : 72 px pour le titre de page, 40 px pour les sections, 21 px pour les titres de cartes, 18 px pour le texte, 14 px minimum. Trois niveaux de boutons : plein (action principale), contour (secondaire), accent (CV).</p>
+		</section>
+
+		<!-- Section : Mise en valeur du profil -->
+		<section aria-labelledby="jc-profil">
+			<h2 id="jc-profil">Mise en valeur du profil</h2>
+			<p>Dès l’accueil : mon nom, ma photo, la pastille « Recherche une alternance en développement web » et l’accès direct au CV. Mes projets sont montrés avec leurs captures, mes compétences et mes outils avec leurs logos.</p>
+		</section>
+
+		<!-- Section : Ergonomie et accessibilité -->
+		<section aria-labelledby="jc-ergonomie">
+			<h2 id="jc-ergonomie">Ergonomie et accessibilité</h2>
+			<p>Le texte principal (bleu nuit sur lilas) a un contraste de 11,2:1 et les boutons accent (texte lilas sur #7E4585) de 5,0:1, soit au-dessus du seuil AA de 4,5:1. Les états hover et focus sont visibles (anneau de focus de 2 px). Le formulaire a des libellés toujours affichés et une case de consentement.</p>
+		</section>
+	</main>
+
+	<!-- ===== PIED DE PAGE ===== -->
+	<footer>
+		<p>© 2026 Lucas Charron — Portfolio</p>
+		<a href="mentions-legales.html">Mentions légales</a>
+	</footer>
+	<!-- Script du menu burger -->
+	<script src="js/nav.js"></script>
+</body>
+
+</html>
