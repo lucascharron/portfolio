@@ -68,6 +68,7 @@
     --color-accent-fonce: #7E4585;  /* Fond des boutons accent (contraste AA) */
     --color-violet-fonce: #4A306D;  /* Titres secondaires, bandeau contact, hover boutons */
     --color-bleu-nuit: #0E273C;     /* Texte, header et footer */
+    --color-carte: #708299;         /* Fond de la carte « à propos » (Figma) */
 
     /* Familles de polices */
     --font-primary: 'Montserrat', sans-serif;
@@ -108,6 +109,8 @@ body {
     background-color: var(--color-fond);
     display: flex;
     flex-direction: column;
+    font-family: var(--font-secondary);
+    color: var(--color-bleu-nuit);
 
 }
 /* ==========================================================================
@@ -207,6 +210,7 @@ header nav a {
     font-weight: var(--fw-semibold);
     text-decoration: none;
     line-height: 1.8rem;
+    white-space: nowrap;
 }
 
 .btn--primary{
@@ -236,4 +240,215 @@ header nav a {
 .btn:focus-visible{
     outline: 0.2rem solid var(--color-accent);
     outline-offset: 0.6rem;
+}
+
+/* ==========================================================================
+   hero + responsive
+   ========================================================================== */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    padding: 3.2rem 2rem 4rem;
+}
+
+.hero__photo {
+    width: 32.4rem;
+    height: auto;
+    aspect-ratio: 6/7;
+    object-fit: cover;
+    border-radius: 2.16rem;
+    box-shadow: 2.16rem 2.16rem 0 var(--color-accent);
+    margin-bottom: 2.16rem;
+}
+
+.hero__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.6rem;
+}
+
+.hero__badge {
+    align-self: stretch;
+    background-color: var(--color-violet-fonce);
+    color: var(--color-fond);
+    padding: 0.8rem 1.6rem;
+    border-radius: 5rem;
+    font-size: 1.4rem;
+    font-weight: var(--fw-regular);
+    line-height: 1.25;
+}
+
+h1 {
+    font-size: var(--fs-title-l);
+    font-family: var(--font-primary);
+    font-weight: var(--fw-medium);
+    line-height: 1.2;
+}
+
+.hero__subtitle {
+    font-size: var(--fs-text-l-small);
+    color: var(--color-violet-fonce);
+    line-height: 1.25;
+}
+
+.hero__description {
+    font-size: var(--fs-text-m-small);
+    font-weight: var(--fw-light);
+    line-height: 1.25;
+}
+
+.hero__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.hero__cv {
+    white-space: nowrap;
+    text-decoration: underline;
+    font-family: var(--font-secondary);
+    font-weight: var(--fw-semibold);
+    color: var(--color-accent-fonce);
+    font-size: var(--fs-text-m-small);
+}
+
+.hero__cv:focus-visible {
+    outline: 0.2rem solid var(--color-accent);
+    outline-offset: 0.6rem;
+}
+
+/* Tablette (768 px et plus) : hero en ligne, version compacte */
+@media (min-width: 768px) {
+    .hero {
+        flex-direction: row;
+        align-items: center;
+        padding: 6.4rem 4rem;
+        gap: 4rem;
+    }
+    .hero__photo {
+        order: 2;
+        flex-shrink: 0;
+        width: 28rem;
+        margin-right: 2.16rem;
+    }
+    .hero__text {
+        flex: 1;
+    }
+    .hero__badge {
+        align-self: flex-start;
+    }
+    .hero__buttons {
+        flex-direction: row;
+        align-items: center;
+    }
+    .hero--apropos .hero__photo {
+        order: 0;
+    }
+}
+
+/* Desktop (1000 px et plus) : mesures de la maquette Figma 1440 px */
+@media (min-width: 1000px) {
+    .hero {
+        padding: 9.6rem 8rem;
+        gap: 6.4rem;
+    }
+    .hero__photo {
+        width: 36rem;
+        border-radius: 2.4rem;
+        box-shadow: 2.4rem 2.4rem 0 var(--color-accent);
+        margin-bottom: 2.4rem;
+        margin-right: 2.4rem;
+    }
+    .hero__text {
+        gap: 2.4rem;
+    }
+    .hero__buttons {
+        gap: 2.4rem;
+    }
+    h1 {
+        font-size: var(--fs-title-xl);
+    }
+    .hero__subtitle {
+        font-size: var(--fs-text-l);
+    }
+    .hero__description {
+        font-size: var(--fs-text-m);
+    }
+    .hero--apropos {
+        padding: 8rem;
+        gap: 8rem;
+    }
+}
+
+/* ==========================================================================
+   section à propos de moi
+   ========================================================================== */
+
+.about {
+    background-color: var(--color-carte);
+    margin: 1.6rem 2rem 6.4rem;
+    padding: 3.2rem 2.4rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.about__text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.about__title {
+    font-size: var(--fs-title-m);
+    font-family: var(--font-primary);
+    font-weight: var(--fw-medium);
+    line-height: 1.2;
+}
+
+.about__description {
+    font-size: var(--fs-text-m-small);
+    font-weight: var(--fw-light);
+    line-height: 1.25;
+}
+
+/* Tablette (768 px et plus) : carte en ligne, textes du mobile */
+@media (min-width: 768px) {
+    .about {
+        flex-direction: row;
+        align-items: center;
+        gap: 4.8rem;
+        padding: 4.8rem;
+        border-radius: 2.4rem;
+        margin: 0 4rem 6.4rem;
+    }
+    .about__text {
+        flex: 1;
+    }
+    .about .btn {
+        flex-shrink: 0;
+    }
+}
+
+/* Desktop (1000 px et plus) : mesures de la maquette Figma 1440 px */
+@media (min-width: 1000px) {
+    .about {
+        margin: 0 8rem 6.4rem;
+    }
+    .about__text {
+        gap: 1.6rem;
+    }
+    .about__title {
+        font-size: var(--fs-title-l);
+    }
+    .about__description {
+        font-size: var(--fs-text-m);
+    }
 }
