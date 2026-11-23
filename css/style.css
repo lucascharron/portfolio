@@ -271,7 +271,7 @@ header nav a {
 }
 
 .hero__badge {
-    align-self: stretch;
+    align-self: flex-start;
     background-color: var(--color-violet-fonce);
     color: var(--color-fond);
     padding: 0.8rem 1.6rem;
@@ -338,9 +338,6 @@ h1 {
     }
     .hero__text {
         flex: 1;
-    }
-    .hero__badge {
-        align-self: flex-start;
     }
     .hero__buttons {
         flex-direction: row;
@@ -450,5 +447,321 @@ h1 {
     }
     .about__description {
         font-size: var(--fs-text-m);
+    }
+}
+
+/* ==========================================================================
+   Mes compétences informatiques
+   ========================================================================== */
+
+.skills {
+    padding: 4rem 2rem 2.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.skills__title {
+    font-size: var(--fs-title-m);
+    font-family: var(--font-primary);
+    font-weight: var(--fw-medium);
+    line-height: 1.2;
+}
+
+.skills__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.6rem;
+    list-style: none;
+    padding: 0;
+}
+
+.skills__card {
+    background-color: var(--color-carte);
+    border-radius: 1.2rem;
+    padding: 2.4rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.skills__icon {
+    height: 9.6rem;
+    width: auto;
+}
+
+.skills__name {
+    font-family: var(--font-secondary);
+    font-size: var(--fs-text-l-small);
+}
+
+/* Tablette (768 px et plus) : 2 colonnes, côtés alignés sur le hero (40 px) */
+@media (min-width: 768px) {
+    .skills {
+        padding: 4rem 4rem 2.4rem;
+    }
+}
+
+/* Desktop (1000 px et plus) : 4 colonnes, mesures de la maquette Figma 1440 px */
+@media (min-width: 1000px) {
+    .skills {
+        padding: 3.2rem 8rem 6.4rem;
+        gap: 4rem;
+    }
+    .skills__title {
+        font-size: var(--fs-title-l);
+    }
+    .skills__list {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2.4rem;
+    }
+    .skills__card {
+        padding: 3.2rem 2.4rem;
+    }
+}
+
+/* ==========================================================================
+   Mes projets
+   ========================================================================== */
+
+.projects {
+    padding: 4rem 2rem 2.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.projects__title {
+    font-size: var(--fs-title-m);
+    font-family: var(--font-primary);
+    font-weight: var(--fw-medium);
+    line-height: 1.2;
+}
+
+.projects__intro {
+    font-size: var(--fs-text-m-small);
+    line-height: 1.25;
+}
+
+.projects__list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.projects__card {
+    background-color: var(--color-carte);
+    border-radius: 1.2rem;
+    overflow: hidden;
+}
+
+.projects__image {
+    width: 100%;
+    height: 19rem;
+    object-fit: cover;
+    display: block;
+}
+
+.projects__body {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.projects__name {
+    font-size: var(--fs-text-l-small);
+    font-weight: var(--fw-regular);
+    line-height: 1.25;
+}
+
+.projects__description {
+    font-size: var(--fs-text-m-small);
+    font-weight: var(--fw-light);
+    line-height: 1.25;
+}
+
+.projects__link {
+    align-self: flex-start;
+    font-size: var(--fs-text-m-small);
+    font-weight: var(--fw-semibold);
+    line-height: 1.25;
+    color: var(--color-fond);
+}
+
+.projects__link::after {
+    content: " →";
+}
+
+.projects__link:focus-visible {
+    outline: 0.2rem solid var(--color-accent);
+    outline-offset: 0.6rem;
+}
+
+.projects__all {
+    align-self: flex-start;
+    margin-top: 1.6rem;
+}
+
+/* Tablette (768 px et plus) : 2 colonnes, côtés alignés sur le hero (40 px) */
+@media (min-width: 768px) {
+    .projects {
+        padding: 4rem 4rem 2.4rem;
+    }
+    .projects__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.4rem;
+    }
+}
+
+/* Desktop (1000 px et plus) : 3 colonnes, mesures de la maquette Figma 1440 px */
+@media (min-width: 1000px) {
+    .projects {
+        padding: 3.2rem 8rem 6.4rem;
+    }
+    .projects__title {
+        font-size: var(--fs-title-l);
+    }
+    .projects__intro {
+        font-size: var(--fs-text-m);
+    }
+    .projects__list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3.2rem;
+        margin-top: 2.4rem;
+    }
+    .projects__image {
+        height: 22rem;
+    }
+}
+
+/* ==========================================================================
+   Travaillons ensemble
+   ========================================================================== */
+
+.cta {
+    background-color: var(--color-violet-fonce);
+    border-radius: 2rem;
+    margin: 2.4rem 2rem 4rem;
+    padding: 3.2rem 2.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.cta__text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.cta__title {
+    font-size: var(--fs-title-m);
+    font-family: var(--font-primary);
+    font-weight: var(--fw-medium);
+    line-height: 1.2;
+    color: var(--color-fond);
+}
+
+.cta__description {
+    font-size: var(--fs-text-m-small);
+    font-weight: var(--fw-light);
+    line-height: 1.25;
+    color: var(--color-fond);
+}
+
+.cta .btn {
+    align-self: flex-start;
+}
+
+/* Tablette (768 px et plus) : texte à gauche, bouton à droite */
+@media (min-width: 768px) {
+    .cta {
+        margin: 2.4rem 4rem 4rem;
+        flex-direction: row;
+        align-items: center;
+        gap: 3.2rem;
+        padding: 3.2rem 4rem;
+    }
+    .cta__text {
+        flex: 1;
+    }
+    .cta .btn {
+        align-self: center;
+        flex-shrink: 0;
+    }
+}
+
+/* Desktop (1000 px et plus) : mesures de la maquette Figma 1440 px */
+@media (min-width: 1000px) {
+    .cta {
+        margin: 0 8rem 9.6rem;
+        padding: 6.4rem;
+        gap: 6.4rem;
+        border-radius: 2.4rem;
+    }
+    .cta__text {
+        gap: 1.6rem;
+        max-width: 88rem;
+    }
+    .cta__title {
+        font-size: var(--fs-title-l);
+    }
+    .cta__description {
+        font-size: var(--fs-text-m);
+    }
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.footer {
+    background-color: var(--color-bleu-nuit);
+    color: var(--color-fond);
+    padding: 2.8rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.footer__copy {
+    font-size: var(--fs-text-m-small);
+    line-height: 1.25;
+}
+
+.footer__link {
+    font-size: var(--fs-text-m-small);
+    line-height: 1.25;
+    color: var(--color-fond);
+    text-decoration: underline;
+    align-self: flex-start;
+}
+
+.footer__link:focus-visible {
+    outline: 0.2rem solid var(--color-accent);
+    outline-offset: 0.6rem;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2.8rem 4rem;
+    }
+    .footer__link {
+        align-self: auto;
+    }
+}
+
+@media (min-width: 1000px) {
+    .footer {
+        padding: 2.8rem 8rem;
     }
 }

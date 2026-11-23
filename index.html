@@ -83,76 +83,84 @@
 		</section>
 
 		<!-- Section : Mes compétences informatiques -->
-		<section aria-labelledby="titre-competences">
-			<h2 id="titre-competences">Mes compétences informatiques</h2>
-			<ul>
-				<li>
-					<img src="img/logos/html5.svg" alt="" width="64" height="64">
-					<p>HTML</p>
+		<section class="skills" aria-labelledby="titre-competences">
+			<h2 class="skills__title" id="titre-competences">Mes compétences informatiques</h2>
+			<ul class="skills__list">
+				<li class="skills__card">
+					<img class="skills__icon" src="img/logos/html5.svg" alt="" width="64" height="64">
+					<p class="skills__name">HTML</p>
 				</li>
-				<li>
-					<img src="img/logos/css3.svg" alt="" width="64" height="64">
-					<p>CSS</p>
+				<li class="skills__card">
+					<img class="skills__icon" src="img/logos/css3.svg" alt="" width="64" height="64">
+					<p class="skills__name">CSS</p>
 				</li>
-				<li>
-					<img src="img/logos/tailwindcss.svg" alt="" width="64" height="64">
-					<p>Tailwind CSS</p>
+				<li class="skills__card">
+					<img class="skills__icon" src="img/logos/tailwindcss.svg" alt="" width="64" height="64">
+					<p class="skills__name">Tailwind CSS</p>
 				</li>
-				<li>
-					<img src="img/logos/javascript.svg" alt="" width="64" height="64">
-					<p>Javascript</p>
+				<li class="skills__card">
+					<img class="skills__icon" src="img/logos/javascript.svg" alt="" width="64" height="64">
+					<p class="skills__name">Javascript</p>
 				</li>
 			</ul>
 		</section>
 
 		<!-- Section : Mes projets -->
-		<section aria-labelledby="titre-projets">
-			<h2 id="titre-projets">Mes projets</h2>
-			<p>Voici quelques exemples que vous pouvez visiter pour voir comment je travaille.</p>
-			<ul>
+		<section class="projects" aria-labelledby="titre-projets">
+			<h2 id="titre-projets" class="projects__title">Mes projets</h2>
+			<p class="projects__intro">Voici quelques exemples que vous pouvez visiter pour voir comment je travaille.</p>
+			<ul class="projects__list">
 				<li>
 					<!-- Projet : Robbie Lens -->
-					<article>
-						<img src="img/projets/robbie-lens.png" alt="Capture de la page d'accueil du site Robbie Lens" width="1017" height="467">
-						<h3>Robbie Lens</h3>
-						<p>Voici un site de présentation d’une photographe.</p>
-						<a href="page-robbies-lens.html" aria-label="Voir le projet Robbie Lens">voir le projet</a>
+					<article class="projects__card">
+						<img class="projects__image" src="img/projets/robbie-lens.png" alt="Capture de la page d'accueil du site Robbie Lens" width="1017" height="467">
+						<div class="projects__body">
+							<h3 class="projects__name">Robbie Lens</h3>
+							<p class="projects__description">Voici un site de présentation d’une photographe.</p>
+							<a class="projects__link" href="page-robbies-lens.html" aria-label="Voir le projet Robbie Lens">voir le projet</a>
+						</div>
 					</article>
 				</li>
 				<li>
 					<!-- Projet : Huddle -->
-					<article>
-						<img src="img/projets/huddle.png" alt="Capture de la page du site Huddle" width="607" height="302">
-						<h3>Huddle</h3>
-						<p>Huddle est un site de discussion communautaire.</p>
-						<a href="page-huddle.html" aria-label="Voir le projet Huddle">voir le projet</a>
+					<article class="projects__card">
+						<img class="projects__image" src="img/projets/huddle.png" alt="Capture de la page du site Huddle" width="607" height="302">
+						<div class="projects__body">
+							<h3 class="projects__name">Huddle</h3>
+							<p class="projects__description">Huddle est un site de discussion communautaire.</p>
+							<a class="projects__link" href="page-huddle.html" aria-label="Voir le projet Huddle">voir le projet</a>
+						</div>
 					</article>
 				</li>
 				<li>
 					<!-- Projet : Ethereum NFT -->
-					<article>
-						<img src="img/projets/etherium-nft.png" alt="Capture de la page du site Ethereum NFT" width="432" height="612">
-						<h3>Ethereum NFT</h3>
-						<p>C’est un site vitrine d’un NFT pour un projet de classe.</p>
-						<a href="page-card-nft.html" aria-label="Voir le projet Ethereum NFT">voir le projet</a>
+					<article class="projects__card">
+						<img class="projects__image" src="img/projets/etherium-nft.png" alt="Capture de la page du site Ethereum NFT" width="432" height="612">
+						<div class="projects__body">
+							<h3 class="projects__name">Ethereum NFT</h3>
+							<p class="projects__description">C’est un site vitrine d’un NFT pour un projet de classe.</p>
+							<a class="projects__link" href="page-card-nft.html" aria-label="Voir le projet Ethereum NFT">voir le projet</a>
+						</div>
 					</article>
 				</li>
 			</ul>
-			<a href="projets.html" class="btn btn--primary">Voir tous mes projets</a>
+			<a href="projets.html" class="btn btn--primary projects__all">Voir tous mes projets</a>
 		</section>
 
 		<!-- Section : Travaillons ensemble -->
-		<section aria-labelledby="titre-contact">
-			<h2 id="titre-contact">Travaillons ensemble</h2>
-			<p>Je suis à la recherche d’une alternance en développement web afin de mettre mes compétences en application et de progresser au sein d’une équipe. Discutons ensemble des projets que nous pourrions mener.</p>
+		<section class="cta" aria-labelledby="titre-contact">
+			<div class="cta__text">
+				<h2 id="titre-contact" class="cta__title">Travaillons ensemble</h2>
+				<p class="cta__description">Je suis à la recherche d’une alternance en développement web afin de mettre mes compétences en application et de progresser au sein d’une équipe. Discutons ensemble des projets que nous pourrions mener.</p>
+			</div>
 			<a href="contact.html" class="btn btn--accent">Me contacter</a>
 		</section>
 	</main>
 
 	<!-- ===== PIED DE PAGE ===== -->
-	<footer>
-		<p>© 2026 Lucas Charron — Portfolio</p>
-		<a href="mentions-legales.html">Mentions légales</a>
+	<footer class="footer">
+		<p class="footer__copy">© 2026 Lucas Charron — Portfolio</p>
+		<a class="footer__link" href="mentions-legales.html">Mentions légales</a>
 	</footer>
 	<!-- Script du menu burger -->
 	<script src="js/nav.js"></script>
