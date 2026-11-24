@@ -47,81 +47,95 @@
 	<!-- ===== CONTENU PRINCIPAL ===== -->
 	<main>
 		<!-- Fil d'Ariane -->
-		<nav aria-label="Fil d'Ariane">
-			<ul>
-				<li><a href="projets.html">Projets</a></li>
-				<li aria-current="page">Générateur de mdp</li>
+		<nav class="breadcrumb" aria-label="Fil d'Ariane">
+			<ul class="breadcrumb__list">
+				<li class="breadcrumb__item"><a href="projets.html">Projets</a></li>
+				<li class="breadcrumb__item" aria-current="page">Générateur de mdp</li>
 			</ul>
 		</nav>
 
 		<!-- Section : présentation du projet -->
-		<section aria-labelledby="titre-projet">
+		<section class="project__header" aria-labelledby="titre-projet">
 			<h1 id="titre-projet">Générateur de mdp</h1>
-			<p>C’est un site fait 100 % IA pour nous apprendre à utiliser l’IA.</p>
-			<ul>
-				<li>Projet de formation</li>
-				<li>IA</li>
+			<p class="project__subtitle">C’est un site fait 100 % IA pour nous apprendre à utiliser l’IA.</p>
+			<ul class="project__tags">
+				<li class="project__tag">Projet de formation</li>
+				<li class="project__tag">IA</li>
 			</ul>
-			<img src="img/projets/projet-6.svg" alt="Capture de la page du site Générateur de mdp">
+			<img src="img/projets/projet-6.svg" class="project__image" width="1280" height="480" alt="Capture de la page du site Générateur de mdp">
 		</section>
 
-		<div>
+		<div class="project__content">
 			<!-- Section : détails du projet (contexte, rôle, apprentissage) -->
-			<section>
-				<h2>Contexte</h2>
-				<p>C’est un site fait 100 % avec l’IA pour nous apprendre à utiliser l’IA.</p>
-				<h2>Mon rôle</h2>
-				<p>J’avais pour rôle, dans ce projet, de développeur junior qui devait faire une application générée à 100 % par intelligence artificielle pour comprendre l’importance des prompts.</p>
-				<h2>Ce que j’ai appris</h2>
-				<p>J’ai appris que faire un bon prompt est compliqué et qu’il fallait passer par plusieurs étapes pour arriver à la fin de notre site.</p>
+			<section class="project__details">
+				<h2 class="project__heading">Contexte</h2>
+				<p class="project__text">C’est un site fait 100 % avec l’IA pour nous apprendre à utiliser l’IA.</p>
+				<h2 class="project__heading">Mon rôle</h2>
+				<p class="project__text">J’avais pour rôle, dans ce projet, de développeur junior qui devait faire une application générée à 100 % par intelligence artificielle pour comprendre l’importance des prompts.</p>
+				<h2 class="project__heading">Ce que j’ai appris</h2>
+				<p class="project__text">J’ai appris que faire un bon prompt est compliqué et qu’il fallait passer par plusieurs étapes pour arriver à la fin de notre site.</p>
 			</section>
 
 			<!-- Complément : informations sur le projet -->
-			<aside aria-labelledby="titre-infos">
-				<h2 id="titre-infos">Informations</h2>
-				<dl>
-					<dt>Type</dt>
-					<dd>Site réalisé avec l’IA</dd>
-					<dt>Cadre</dt>
-					<dd>Projet de formation</dd>
-					<dt>Durée</dt>
-					<dd>1 jour</dd>
-					<dt>Outils</dt>
-					<dd>Claude Code et PhpStorm</dd>
+			<aside class="project__info" aria-labelledby="titre-infos">
+				<h2 id="titre-infos" class="project__info-title">Informations</h2>
+				<dl class="project__info-list">
+					<div class="project__info-item">
+						<dt class="project__term">Type</dt>
+						<dd class="project__value">Site réalisé avec l’IA</dd>
+					</div>
+					<div class="project__info-item">
+						<dt class="project__term">Cadre</dt>
+						<dd class="project__value">Projet de formation</dd>
+					</div>
+					<div class="project__info-item">
+						<dt class="project__term">Durée</dt>
+						<dd class="project__value">1 jour</dd>
+					</div>
+					<div class="project__info-item">
+						<dt class="project__term">Outils</dt>
+						<dd class="project__value">Claude Code et PhpStorm</dd>
+					</div>
 				</dl>
 				<a href="#" class="btn btn--primary">Voir le site</a>
 			</aside>
 		</div>
 
 		<!-- Section : Autres projets -->
-		<section aria-labelledby="titre-autres">
-			<h2 id="titre-autres">Autres projets</h2>
-			<ul>
+		<section class="projects projects--related" aria-labelledby="titre-autres">
+			<h2 id="titre-autres" class="projects__title">Autres projets</h2>
+			<ul class="projects__list">
 				<li>
 					<!-- Projet : Robbie Lens -->
-					<article>
-						<img src="img/projets/robbie-lens.png" width="1017" height="467" alt="Capture de la page d'accueil du site Robbie Lens">
-						<h3>Robbie Lens</h3>
-						<p>Voici un site de présentation d’une photographe.</p>
-						<a href="page-robbies-lens.html" aria-label="Voir le projet Robbie Lens">Voir le projet →</a>
+					<article class="projects__card">
+						<img src="img/projets/robbie-lens.png" class="projects__image" width="1017" height="467" alt="Capture de la page d'accueil du site Robbie Lens">
+						<div class="projects__body">
+							<h3 class="projects__name">Robbie Lens</h3>
+							<p class="projects__description">Voici un site de présentation d’une photographe.</p>
+							<a href="page-robbies-lens.html" class="projects__link" aria-label="Voir le projet Robbie Lens">Voir le projet</a>
+						</div>
 					</article>
 				</li>
 				<li>
 					<!-- Projet : Huddle -->
-					<article>
-						<img src="img/projets/huddle.png" width="607" height="302" alt="Capture de la page du site Huddle">
-						<h3>Huddle</h3>
-						<p>Huddle est un site de discussion communautaire.</p>
-						<a href="page-huddle.html" aria-label="Voir le projet Huddle">Voir le projet →</a>
+					<article class="projects__card">
+						<img src="img/projets/huddle.png" class="projects__image" width="607" height="302" alt="Capture de la page du site Huddle">
+						<div class="projects__body">
+							<h3 class="projects__name">Huddle</h3>
+							<p class="projects__description">Huddle est un site de discussion communautaire.</p>
+							<a href="page-huddle.html" class="projects__link" aria-label="Voir le projet Huddle">Voir le projet</a>
+						</div>
 					</article>
 				</li>
 				<li>
 					<!-- Projet : Ethereum NFT -->
-					<article>
-						<img src="img/projets/etherium-nft.png" width="432" height="612" alt="Capture de la page du site Ethereum NFT">
-						<h3>Ethereum NFT</h3>
-						<p>C’est un site vitrine d’un NFT pour un projet de classe.</p>
-						<a href="page-card-nft.html" aria-label="Voir le projet Ethereum NFT">Voir le projet →</a>
+					<article class="projects__card">
+						<img src="img/projets/etherium-nft.png" class="projects__image" width="432" height="612" alt="Capture de la page du site Ethereum NFT">
+						<div class="projects__body">
+							<h3 class="projects__name">Ethereum NFT</h3>
+							<p class="projects__description">C’est un site vitrine d’un NFT pour un projet de classe.</p>
+							<a href="page-card-nft.html" class="projects__link" aria-label="Voir le projet Ethereum NFT">Voir le projet</a>
+						</div>
 					</article>
 				</li>
 			</ul>
